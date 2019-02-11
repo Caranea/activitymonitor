@@ -1,0 +1,20 @@
+{
+  "name": "Personal Activity Monitor",
+  "version": "1.0",
+  "description": "Monitor your web activity and increase efectiveness with chrome extension",
+  "permissions": ["activeTab", "idle", "declarativeContent", "storage", "tabs", "webNavigation", "windows", "http://localhost:5000/*", "https://unpkg.com/axios/dist/axios.min.js"],
+  "background": {
+    "page": "activity-monitor.html"
+  },
+  "options_page": "views/options.html",
+  "browser_action": {
+    "default_popup": "views/dashboard.html",
+    "default_icon": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    }
+  },
+  "manifest_version": 2
+}

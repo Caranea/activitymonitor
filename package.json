@@ -1,0 +1,15 @@
+{
+  "name": "activity-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "activityMonitor.js",
+  "scripts": {
+    "build": "browserify activityMonitor.js -o dist/bundle.js",
+    "watch": "watchify activityMonitor.js -o dist/bundle.js -v"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "standard": "^12.0.1"
+  }
+}
